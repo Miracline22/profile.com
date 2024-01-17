@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang-"en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/5ee41c2b1a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Project">Project</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p> Business Analyst</p>
+            <h1>Hi, I am <span>Miracline</span> <br>Peter from <br>USA</h1>
+        </div>
+    </div>
+</div>
+<!----------------------------------about -------------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+            <img src="Images/user.png.jpg" alt="">
+        </div>
+            <div class="about-col-2">
+                <h1 class="sub-title"> About Me</h1>
+                <p>
+                    I am a Business Analyst with completed Master program in Business Administration in hamline
+                     university 2024.I have done my Bachelor of Computer Application in 2021. 
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Business Analyst</span><br>Preparing Business flow</li>
+                        <li><span>SQL</span><br>Creating Database</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>May 2023 - Present</span><br>Business Analyst</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>July 2018 - May 2021</span><br>Bachelor of Computer Application<br>Honor Student</li>
+                        <li><span>August 2022 - May 2024</span><br>Master of Business Administration</li>
+                    </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------------Project----------------------->
+<div id="Project">
+    <div class="container">
+        <h1 class="sub-title"> My Project</h1>
+        <div class="Project-list">
+            <div>
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <h2>HireAMaster</h2>
+                <p>HireAMaster is a web-based application which allows Masters to create profile through
+                    a verification process and also let in Rookies(students) to find the perfect Masters
+                    for themselves. Both will have a live sessions conducted through gmeet with appropriate 
+                    payments done.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-child-reaching"></i>
+                <h2>Assessrite</h2>
+                <p>Assessrite is a online Assessment tool which allows teacher to set up a platform where students
+                    will be auto graded for their Assessment.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-hotel"></i>
+                <h2>Opus</h2>
+                <p>Opus is a PMS system which allows customer to book rooms with their comfortablity and to gain
+                    through services in the hotel management.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--------------------Portfolio------------------------>
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Work</h1> 
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work3.png">
+            </div>
+            <div class="about-col-3">
+                <p>A <span>business analyst</span> is a professional who assesses an organization's business needs, identifies 
+                    opportunities for improvement, and provides data-driven insights to help stakeholders make 
+                    informed decisions. They bridge the gap between business goals and IT solutions, analyzing processes,
+                     gathering requirements, and recommending strategies to enhance efficiency, p
+                     roductivity, and overall business success  
+                </p>
+                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------------------contact--------------------->
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="Contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>Miraclinepeter22@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>612-669-9042</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/miracline-peter-66b457214/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+                </div>
+                <a href="Images/My CV.pdf"><button class="my-button">Download CV</button></a>
+            </div>
+            <div class="Contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="my-button">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+            
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    } 
+
+</script>
+<script defer>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right= "0";
+    }
+    function closemenu(){
+        sidemenu.style.right= "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw7WXXvcUewLMx6GRfUMZBzrouOClFuyJ_KjqvnLHFJMaJCjlaew3nj0LIjis1Uc-p-/exec'
+    const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+    </body>
+</html>
